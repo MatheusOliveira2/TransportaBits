@@ -1,0 +1,6 @@
+Requisitos não Funcionais
+
+1- O software deve operar em qualquer plataforma.
+2- O software deve liberar as funcionalidades apenas para usuários cadastrados.
+3- O software deverá ser desenvolvido em NodeJS e JavaScipt.
+4- O software deverá se comunicar com MySQL.
