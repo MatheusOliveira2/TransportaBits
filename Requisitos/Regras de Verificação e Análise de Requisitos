@@ -1,1 +1,16 @@
+Regras e Especificações de Requisitos
+
+1- Evitar as palavras: E, OU, SOMENTE SE, EXCETO, SE NECESSÁRIO, MAS, CONTUDO, ENTRETANDO, USUALMENTE,
+GERALMENTE, FREQUENTEMENTE, TIPICAMENTE, AMIGÁVEL, VERSÁTIL, FLEXÍVEL, APROXIMADAMENTE,
+TÃO LOGO QUANTO POSSÍVEL, TALVEZ, PROVAVELMENTE ou palavras que forneçam a mesma idéia que essas;
+
+2- Evitar sentenças grandes;
+
+3- Manter estrutura hierárquica dos requisitos;
+
+4- Transformar os requisitos do usuário em requisitos do software;
+
+5- Agrupar corretamente os requisitos;
+
+6- Não conter ambiguidade.
 
