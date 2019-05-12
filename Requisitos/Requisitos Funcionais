@@ -1,82 +1,75 @@
 Requisitos Funcionais
 
-1- O usuário deverá ser capaz de fazer login.
-  1.1- O software deve permitir a inserção do cnpj;
-  1.2- O software deve permitir a inserção da senha.
+[RF001]- O usuário deverá ser capaz de fazer login.
+  [RF001.1]- O software deve permitir a inserção do cnpj;
+  [RF001.2]- O software deve permitir a inserção da senha.
   
-2- O usuário deverá ser capaz de se cadastrar.
-  2.1 O software deverá permitir o registro do cnpj;
-  2.2 O software deverá permitir o registro do e-mail;
-  2.3 O software deverá permitir o registro do endereço;
-  2.4 O software deverá permitir o registro da senha.
+[RF002]- O usuário deverá ser capaz de se cadastrar.
+  [RF002.1] O software deverá permitir o registro do cnpj;
+  [RF002.2] O software deverá permitir o registro do e-mail;
+  [RF002.3] O software deverá permitir o registro do endereço;
+  [RF002.4] O software deverá permitir o registro da senha.
   
-3- O software deverá permitir o cadastro do cliente via internet.
+[RF003]- O software deverá permitir a navegação entre suas funcionalidades.
 
-4- O software deverá permitir o login via internet.
+[RF004]- O software deverá permitir a remoção da própria conta.
+  [RF004.1]- O usuário deverá confirmar a remoção da conta.
 
-5- O software deverá permitir a remoção da própria conta.
-  5.1- O usuário deverá confirmar a remoção da conta.
+[RF005]- O software deverá mostrar informações do cliente.
 
-6- O software deverá mostrar informações do cliente.
+[RF006]- O software deverá permitir a alteração de dados do cliente.
+  [RF006.1] O software deverá permitir a alteração do email;
+  [RF006.2] O software deverá permitir a alteração do endereço;
+  [RF006.2] O software deverá permitir a alteração da senha.
+  [RF006.3] O software deverá permirir o cadastro e alteração da foto do usuário.
 
-7- O software deverá permitir a alteração de dados do cliente.
-  7.1 O software deverá permitir a alteração do email;
-  7.2 O software deverá permitir a alteração do endereço;
-  7.2 O software deverá permitir a alteração da senha.
-
-8- O software deverá permitir a gerência de motoristas pelo usuário.
-  8.1 O software deverá permitir a inserção de motoristas pelo usuário.
-    8.1.1 O software deverá permitir o registro do nome do motorista;
-    8.1.2 O software deverá permitir o registro da CNH do motorista;
-    8.1.3 O software deverá permitir o registro do veículo pelo qual o motorista é responsável.
+[RF007]- O software deverá permitir a gerência de motoristas pelo usuário.
+  [RF007.1] O software deverá permitir a inserção de motoristas pelo usuário.
+    [RF007.1.1] O software deverá permitir o registro do nome do motorista;
+    [RF007.1.2] O software deverá permitir o registro da CNH do motorista;
+    [RF007.1.3] O software deverá permitir o registro do veículo pelo qual o motorista é responsável.
   
-  8.2 O software deverá permitir a atualização de atributos do motoristas pelo usuário.
-    8.2.1 O software deverá permitir a alteração do veículo pelo qual o motorista é responsável.
+  [RF007.2] O software deverá permitir a atualização de atributos do motoristas pelo usuário.
+    [RF007.2.1] O software deverá permitir a alteração do veículo pelo qual o motorista é responsável.
    
-  8.3 O software deverá permitir a consulta de motoristas pelo usuário.
-    8.3.1 O software deverá permitir a consulta pela CNH do motorista.
+  [RF007.3] O software deverá permitir a consulta de motoristas pelo usuário.
+    [RF007.3.1] O software deverá permitir a consulta pela CNH do motorista.
  
-  8.4 O software deverá permitir a remoção de motoristas pelo usuário.
-    8.4.1 O software deverá permitir a remoção de motoristas pela CNH do motorista;
-    8.4.2 O usuário deverá confirmar a remoção do motorista.
+  [RF007.4] O software deverá permitir a remoção de motoristas pelo usuário.
+    [RF007.4.1] O software deverá permitir a remoção de motoristas pela CNH do motorista;
+    [RF007.4.2] O usuário deverá confirmar a remoção do motorista.
     
     
-9- O software deverá permitir a gerência de veículos pelo usuário.
-  9.1 O software deverá permitir a inserção de veículos pelo usuário.
-    9.1.1 O software deverá permitir o registro do modelo do veículo;
-    9.1.2 O software deverá permitir o registro da placa do veículo;
-    9.1.3 O software deverá permitir o registro do chassi do veículo;
-    9.1.4 O software deverá permitir o registro da cor do veículo;
-    9.1.5 O software deverá permiri o registro de ano do veículo.
+[RF008]- O software deverá permitir a gerência de veículos pelo usuário.
+  [RF008.1] O software deverá permitir a inserção de veículos pelo usuário.
+    [RF008.1.1] O software deverá permitir o registro do modelo do veículo;
+    [RF008.1.2] O software deverá permitir o registro da placa do veículo;
+    [RF008.1.3] O software deverá permitir o registro do chassi do veículo;
+    [RF008.1.4] O software deverá permitir o registro da cor do veículo;
+    [RF008.1.5] O software deverá permiri o registro de ano do veículo.
    
-  9.2 O software deverá permitir a alteração de atributos dos veículos pelo usuário.
-    9.2.1 O software deverá permitir a alteração da cor do veículo;
+  [RF008.2] O software deverá permitir a alteração de atributos dos veículos pelo usuário.
+    [RF008.2.1] O software deverá permitir a alteração da cor do veículo;
     
-  9.3 O software deverá permitir a consulta de veículos pelo usuário.
-    9.3.1 O software deverá permitir a consulta através da placa do veículo;
+  [RF008.3] O software deverá permitir a consulta de veículos pelo usuário.
+    [RF008.3.1] O software deverá permitir a consulta através da placa do veículo;
     
-  9.4 O software deverá permitir a remoção de veículos pelo usuário.
-    9.4.1 O software deverá permitir a remoção através da placa do veículo;
-    9.4.2 O usuário deverá confirmar a remoção do veículo.
+  [RF008.4] O software deverá permitir a remoção de veículos pelo usuário.
+    [RF008.4.1] O software deverá permitir a remoção através da placa do veículo;
+    [RF008.4.2] O usuário deverá confirmar a remoção do veículo.
     
-10- O software deverá permitir a gerência de rastreadores pelo usuário.
-    10.1 O software deverá permitir a inserção de rastreadores pelo usuário.
-      10.1.1 O software deverá permitir o registro do código de série do rastreador;
-      10.1.2 O software deverá permitir o registro do modelo do rastreador;
-      10.1.3 O software deverá permitir o registro do veículo no qual rastreador está instalado.
+[RF009]- O software deverá permitir a gerência de rastreadores pelo usuário.
+    [RF009.1] O software deverá permitir a inserção de rastreadores pelo usuário.
+      [RF009.1.1] O software deverá permitir o registro do código de série do rastreador;
+      [RF009.1.2] O software deverá permitir o registro do modelo do rastreador;
+      [RF009.1.3] O software deverá permitir o registro do veículo no qual rastreador está instalado.
     
-    10.2 O software deverá permitir a alteração de rastreadores pelo usuário.
-      10.1.3 O software deverá permitir a alteração do veículo no qual rastreador está instalado.
+    [RF009.2] O software deverá permitir a alteração de rastreadores pelo usuário.
+      [RF009.2.1] O software deverá permitir a alteração do veículo no qual rastreador está instalado.
       
-    10.3 O software deverá permitir a consulta de rastreadores pelo usuário.
-      10.3.1 O software deverá permitir a consulta através do código de série.
+    [RF009.3] O software deverá permitir a consulta de rastreadores pelo usuário.
+      [RF009.3.1] O software deverá permitir a consulta através do código de série.
       
-    10.4 O software deverá permitir a remoção de veículos pelo usuário.
-      10.4.1 O software deverá permitir a remoção através do código de série;
-      10.4.2 O usuário deverá confirmar a remoção do rastreador.
-      
-      
-   
-   
-    
-   
+    [RF009.4] O software deverá permitir a remoção de veículos pelo usuário.
+      [RF009.4.1] O software deverá permitir a remoção através do código de série;
+      [RF009.4.2] O usuário deverá confirmar a remoção do rastreador.
