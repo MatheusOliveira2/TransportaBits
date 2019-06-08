@@ -33,14 +33,14 @@
 			}
 			return $result;
 		}
-		
-		function alterar($cliente, $link) {
-			$query = "update cliente set nome='".($cliente->getNome())."', nascimento='".($cliente->getNascimento())."', salario=".($cliente->getSalario())." WHERE ID=".$cliente->getCodigo();
+		*/
+		function alterar($placa, $cor,$link) {
+			$query = "UPDATE Veiculo set Cor = '$cor' WHERE Placa="."'$placa'";
 			if(!mysqli_query($link, $query)) {
 				die("ERRO! NAO SALVOU OS DADOS.<br /><br /><a href=\"../view/alterarCliente.html\">VOLTAR</a>");
 			}
-			echo "DADOS SALVOS.<br /><br /><a href=\"../view/alterarCliente.html\">VOLTAR</a>";
+			echo "DADOS SALVOS.<br /><br /><a href=\"../view/atualizarVeiculo.php\">VOLTAR</a>";
         }
-        */
+        
 	}
 ?>

@@ -4,24 +4,25 @@
 	$conexao->conectar();
 	$query = "SELECT * FROM `Veiculo` ";
 	$results = mysqli_query($conexao->getLink(), $query);
+	$cor = "";
 ?>
 
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
-		<title>Consultar</title>
+		<title>Atualizar</title>
 	</head>
 
 	<body>
-		<form action="../controller/C_consultarVeiculo.php" method="POST">
-			<h2>Consultar Veiculo</h2>
-				Placa:<select name="codigo">
+		<form action="../controller/C_atualizarVeiculo.php" method="POST">
+			<h2>Atualizar Veiculo</h2>
+				Placa:<select  name="codigo">
 					<?php while($row = $results->fetch_assoc()):?>
 						<option value="<?= $row['Placa'] ?>"><?= $row['Placa'] ?></option>
 					<?php endwhile ?>
 				</select>
-			<input type="submit" name="salvar" />
-			<input type="reset" name="limpar" /><br />
+				Cor: <input type="text" name="cor" value="<?= $row['Placa']?>"><br />	
+			<button type = "submit"> Atualizar </button>
 		</form>
 		
 		<br /><a href="../index.php">VOLTAR</a>

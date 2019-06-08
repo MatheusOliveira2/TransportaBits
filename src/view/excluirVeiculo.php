@@ -26,7 +26,7 @@ $results = mysqli_query($conexao->getLink(), $query);
 		<input type="reset" name="limpar" /><br />
 	</form>
 
-	<br /><a href="sistema.html">VOLTAR</a>
+	<br /><a href="../index.php">VOLTAR</a>
 </body>
 
 </html>

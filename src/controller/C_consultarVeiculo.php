@@ -34,6 +34,6 @@
 	echo "<td>".($linha[4])."</td>";
 	echo "</tr>";
 	echo "</table>";
-	echo "<br /><a href=\"../view/consultarCliente.html\">VOLTAR</a>";
+	echo "<br /><a href=\"../view/consultarVeiculo.php\">VOLTAR</a>";
 	$conexao->fechar();
 ?>
