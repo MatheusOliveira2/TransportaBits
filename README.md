@@ -10,8 +10,13 @@ Vale ressaltar que o software ainda se encontra em desenvolvimento, portanto o c
 *Regras para Commit
 
 1- Limitar o assunto com 50 caracteres;
+
 2- Captalizar a linha de assunto;
+
 3- Não terminar a linha de assunto com ponto final;
+
 4- Usar modo indicativo na linha de assunto;
+
 5- Corpo de texto não é obrigatório;
+
 6- Seguir as orientação de localidade(requisitos devem ser comitados na pasta "Requisitos", diagramas na pasta "Diagramas"...).
