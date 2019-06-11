@@ -1,4 +1,5 @@
 <?php
+	#Controlador responsável por excluir os veiculos do banco de dados.
 	include_once("../model/veiculo.php");
 	include_once("../persistence/conexao.php");
 	include_once("../persistence/veiculoDAO.php");

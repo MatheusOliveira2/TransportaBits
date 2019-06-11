@@ -1,3 +1,5 @@
+<!-- Interface com os campos necessários para atualizar os dados de veículos -->
+
 <?php 
 	include_once("../persistence/conexao.php");
 	$conexao = new Connection();
@@ -6,6 +8,8 @@
 	$results = mysqli_query($conexao->getLink(), $query);
 	$cor = "";
 ?>
+
+
 
 <html>
 	<head>

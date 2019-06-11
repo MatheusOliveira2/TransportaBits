@@ -1,3 +1,5 @@
+<!-- Interface com os campos necessários para consultar os dados de veículos -->
+
 <?php 
 	include_once("../persistence/conexao.php");
 	$conexao = new Connection();

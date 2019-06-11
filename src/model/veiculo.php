@@ -1,4 +1,5 @@
 <?php 
+#Classe Veículo  com os métodos e atriutos necessários
 include_once("../persistence/conexao.php");
 class Veiculo{
     private $modelo;

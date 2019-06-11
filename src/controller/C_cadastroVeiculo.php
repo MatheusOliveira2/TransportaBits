@@ -1,4 +1,5 @@
 <?php
+	#Controlador responsável por cadastrar os veículos
 	include_once("../model/veiculo.php");
 	include_once("../persistence/conexao.php");
 	include_once("../persistence/veiculoDAO.php");
