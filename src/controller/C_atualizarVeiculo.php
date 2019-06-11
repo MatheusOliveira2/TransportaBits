@@ -6,6 +6,7 @@
     $placa = $_POST['codigo'];
     $cor = $_POST['cor'];
 	
+	
 	$conexao = new Connection();
 	$conexao->conectar();
 	
