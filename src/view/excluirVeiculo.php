@@ -22,8 +22,7 @@ $results = mysqli_query($conexao->getLink(), $query);
 						<option value="<?= $row['Placa'] ?>"><?= $row['Placa'] ?></option>
 					<?php endwhile ?>
 				</select>
-		<input type="submit" name="salvar" />
-		<input type="reset" name="limpar" /><br />
+				<button type = "submit"> Excluir </button>
 	</form>
 
 	<br /><a href="../index.php">VOLTAR</a>

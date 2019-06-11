@@ -12,8 +12,7 @@
             Chassi: <input type="text" name="chassi" /><br />
             Cor: <input type="text" name="cor" /><br />
             Ano: <input type="text" name="ano" /><br />
-			<input type="submit" name="salvar" />
-			<input type="reset" name="limpar" /><br />
+			<button type = "submit"> Cadastrar </button>
 		</form>
 		
 		<br /><a href="../index.php">VOLTAR</a>
