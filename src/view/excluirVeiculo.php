@@ -24,7 +24,7 @@ $results = mysqli_query($conexao->getLink(), $query);
 <body>
 	<div class="container-fluid">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-			<a class="navbar-brand h1 mb-0" href="#"> Excluir Veículos</a>
+			<a class="navbar-brand h1 mb-0" href="#"> <h3>Excluir Veículos</h3></a>
 		</nav>
 		<div class="col-sm-12 col-md-12 col-lg-12 text-center">
 			<form  action="../controller/C_excluirVeiculo.php" method="POST">

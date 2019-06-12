@@ -14,7 +14,7 @@
 	<body>
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-				<a class="navbar-brand h1 mb-0" href="#"> Cadastrar Veículos</a>
+				<a class="navbar-brand h1 mb-0" href="#"> <h3>Cadastrar Veículos</h3></a>
 			</nav>
 			<div class="col-sm-12 col-md-12 col-lg-12 text-center">
 				<form action="../controller/C_cadastroVeiculo.php" method="POST">
