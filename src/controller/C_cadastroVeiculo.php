@@ -12,4 +12,4 @@
 	$veiculodao = new veiculoDao();
 	$veiculodao->cadastrar($veiculo, $conexao->getLink());
 	$conexao->fechar();
-?>
+?>	

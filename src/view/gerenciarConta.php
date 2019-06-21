@@ -8,27 +8,33 @@
 		<script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
 		<script type="text/javascript" src="../node_modules/popper.js/dist/popper.js"></script>
 		<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-		<title>Login</title>
+		<title>Gerenciar</title>
 	</head>
 
 	<body>
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-				<a class="navbar-brand h1 mb-0" href="#"> <h3>Transporta Bits</h3></a>
+				<a class="navbar-brand h1 mb-0" href="#"> <h3>Atualizar Cliente</h3></a>
 			</nav>
 			<div class="col-sm-12 col-md-12 col-lg-12 text-center">
 				<form action="../controller/C_cadastroVeiculo.php" method="POST">
-					<h2>Login</h2>
+					<h2>Gerenciamento de Cliente</h2>
 					<div class="row d-flex justify-content-center mt-2">
-						CNPJ <input type="text" name="cnpj" /><br />
+						E-mail: <input type="text" name="email" /><br />
 					</div>
 					<div class="row d-flex justify-content-center mt-2">
-						Senha: <input type="password" name="senha" /><br />
-					</div> 
+					    	Endereço: <input type="text" name="endereco" /><br />
+                    </div>  
+                    <div class="row d-flex justify-content-center mt-2">
+					    	Senha: <input type="password" name="senha" /><br />
+					</div>  
 					<br />
-					<a class="btn btn-dark" href="view/gerenciarFrota.php"> Login </a>
-                    <a class="btn btn-primary" href="view/cadastrarCliente.php" >Cadastrar</a>
+                    <button class="btn btn-dark" type = "submit"> Atualizar </button>
+                    <a class="btn btn-primary" href="../index.php" >VOLTAR</a>
 				</form>
+				
+				<br />
+
 			</div>
 		</div>
 	</body>
