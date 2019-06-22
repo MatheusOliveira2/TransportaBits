@@ -15,7 +15,7 @@ $results = mysqli_query($conexao->getLink(), $query);
 	<link href="../node_modules/bootstrap/compiler/bootstrap.css" rel="stylesheet" type="text/css"/>
 	<link href="../node_modules/bootstrap/compiler/styles.css" rel="stylesheet" type="text/css"/>
 	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
-	<script type="text/javascript" src="../node_modules/popper.js/dist/popper.js"></script>
+	<script type="text/javascript" src="../node_modules/popper.js/dist/umd/popper.js"></script>
 	<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	</head>
 	<title>Excluir</title>

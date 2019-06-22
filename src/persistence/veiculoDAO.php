@@ -48,7 +48,7 @@
 							if(!mysqli_query($link, $query)) {
 								die("<h2>ERRO! Veículo Não Atualizado.</h2><br /><br /><a class=\"btn btn-primary\"  href=\"../view/atualizarVeiculo.php\">VOLTAR</a>");
 							}
-							echo "<h2>Veículo Atualizado com Sucesso.</h2><br /><	br /><a class=\"btn btn-primary\" href=\"../view/atualizarVeiculo.php\">VOLTAR</a>";
+							echo "<h2>Veículo Atualizado com Sucesso.</h2><br /><br /><a class=\"btn btn-primary\" href=\"../view/atualizarVeiculo.php\">VOLTAR</a>";
 					}
 					
 					}
