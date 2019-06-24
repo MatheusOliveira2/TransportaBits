@@ -29,8 +29,8 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav ml-auto">
-						<a class="btn btn-primary" href="gerenciarFrota.php" >VOLTAR</a>
-						<a class="btn btn-primary" href="../index.php" >LOGOUT</a>
+						<a class="btn btn-primary minhaNavbar" href="gerenciarFrota.php" >VOLTAR</a>
+						<a class="btn btn-primary minhaNavbar" href="../index.php" >LOGOUT</a>
 					</ul>
 				</div>
 			</nav>
@@ -38,17 +38,25 @@
 			<h1>TransportaBits</h1>
 				<h2>Gerenciamento de Cliente</h2>
 				<form action="../controller/C_cadastroVeiculo.php" method="POST">
+				<div class="container">
 					<div class="row d-flex justify-content-center mt-2">
-						E-mail: <input type="text" name="email" /><br />
+						<div class="col-3 " style="text-align: left;">
+							E-mail: <input type="text" name="email" /><br />
+						</div>
 					</div>
 					<div class="row d-flex justify-content-center mt-2">
-					    	Endereço: <input type="text" name="endereco" /><br />
+						<div class="col-3 " style="text-align: left;">
+							Endereço: <input type="text" name="endereco" /><br />
+						</div>
                     </div>  
                     <div class="row d-flex justify-content-center mt-2">
-					    	Senha: <input type="password" name="senha" /><br />
+						<div class="col-3 " style="text-align: left;">
+							Senha: <input type="password" name="senha" /><br />
+						</div>
 					</div>  
 					<br />
                     <button class="btn btn-dark" type = "submit"> Atualizar Dados </button>
+				</div>
 				</form>
 			</div>
 			

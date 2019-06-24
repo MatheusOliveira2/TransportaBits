@@ -37,8 +37,8 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav ml-auto">
-						<a class="btn btn-primary" href="gerenciarMotoristas.php" >VOLTAR</a>
-						<a class="btn btn-primary" href="../index.php" >LOGOUT</a>
+						<a class="btn btn-primary minhaNavbar" href="gerenciarMotoristas.php" >VOLTAR</a>
+						<a class="btn btn-primary minhaNavbar" href="../index.php" >LOGOUT</a>
 					</ul>
 				</div>
 			</nav>
@@ -46,12 +46,13 @@
 			<h1>TransportaBits</h1>
 			<h2>Consultar Motorista</h2>
 				<form action="../controller/C_consultarVeiculo.php" method="POST">
-					<h2>Selecione a CNH</h2>
 						CNH:<select name="codigo">
 							<?php while($row = $results->fetch_assoc()):?>
 								<option value="<?= $row['Placa'] ?>"><?= $row['Placa'] ?></option>
 							<?php endwhile ?>
 						</select>
+						<br />
+						<br />	
 						<button class="btn btn-dark" type = "submit"> Consultar </button>
 				</form>
 			</div>

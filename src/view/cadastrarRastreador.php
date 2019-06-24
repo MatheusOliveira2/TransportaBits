@@ -29,8 +29,8 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav ml-auto">
-						<a class="btn btn-primary" href="gerenciarRastreadores.php" >VOLTAR</a>
-						<a class="btn btn-primary" href="../index.php" >LOGOUT</a>
+						<a class="btn btn-primary minhaNavbar" href="gerenciarRastreadores.php" >VOLTAR</a>
+						<a class="btn btn-primary minhaNavbar" href="../index.php" >LOGOUT</a>
 					</ul>
 				</div>
 			</nav>
@@ -38,17 +38,25 @@
 			<h1>TransportaBits</h1>
 				<h2>Cadastrar Rastreador</h2>
 				<form action="../controller/C_cadastroVeiculo.php" method="POST">
-					<div class="row d-flex justify-content-center mt-2">
-						Modelo: <input type="text" name="modelo" /><br />
+					<div class="container">
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+								Modelo: <input type="text" name="modelo" /><br />
+							</div>
+						</div>
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+								N° Série: <input type="text" name="nSerie" /><br />
+							</div>
+						</div>
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+									Veículo: <input type="text" name="veiculo" /><br />
+							</div>
+						</div>
+						<br />
+						<button class="btn btn-dark" type = "submit"> Cadastrar </button>
 					</div>
-					<div class="row d-flex justify-content-center mt-2">
-						N° Série: <input type="text" name="nSerie" /><br />
-					</div>
-					<div class="row d-flex justify-content-center mt-2">
-					    	Veículo: <input type="text" name="veiculo" /><br />
-					</div>
-					<br />
-					<button class="btn btn-dark" type = "submit"> Cadastrar </button>
 				</form>
 			</div>
 		</div>

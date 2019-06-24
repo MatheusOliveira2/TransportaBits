@@ -40,23 +40,33 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav ml-auto">
-						<a class="btn btn-primary" href="gerenciarRastreadores.php" >VOLTAR</a>
-						<a class="btn btn-primary" href="../index.php" >LOGOUT</a>
+						<a class="btn btn-primary minhaNavbar" href="gerenciarRastreadores.php" >VOLTAR</a>
+						<a class="btn btn-primary minhaNavbar" href="../index.php" >LOGOUT</a>
 					</ul>
 				</div>
 			</nav>
 			<div class="col-sm-12 col-md-12 col-lg-12 text-center">
 			<h1>TransportaBits</h1>
 				<form action="../controller/C_atualizarVeiculo.php" method="POST">
-				<h2>Atualizar Rastreador</h2>
-						Rastreador:<select  name="codigo">
-							<?php while($row = $results->fetch_assoc()):?>
-								<option value="<?= $row['Placa'] ?>"><?= $row['Placa'] ?></option>
-							<?php endwhile ?>
-						</select>
-						Veículo: <input type="text" name="veiculo" value="<?= $row['Placa']?>"><br />	
-					<br />
-					<button class="btn btn-dark" type = "submit"> Atualizar </button>
+					<div class="container">
+						<h2>Atualizar Rastreador</h2>	
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+								Rastreador:<br/><select  name="codigo">
+												<?php while($row = $results->fetch_assoc()):?>
+													<option value="<?= $row['Placa'] ?>"><?= $row['Placa'] ?></option>
+												<?php endwhile ?>
+											</select>
+							</div>
+						</div>
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+								Veículo: <input type="text" name="veiculo" value="<?= $row['Placa']?>"><br />	
+							</div>
+						</div>
+						<br/>
+						<button class="btn btn-dark" type = "submit"> Atualizar </button>
+					</div>
 				</form>
 			</div>
 		</div>

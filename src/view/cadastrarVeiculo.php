@@ -29,8 +29,8 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav ml-auto">
-						<a class="btn btn-primary" href="gerenciarVeiculos.php" >VOLTAR</a>
-						<a class="btn btn-primary" href="../index.php" >LOGOUT</a>
+						<a class="btn btn-primary minhaNavbar" href="gerenciarVeiculos.php" >VOLTAR</a>
+						<a class="btn btn-primary minhaNavbar" href="../index.php" >LOGOUT</a>
 					</ul>
 				</div>
 			</nav>
@@ -38,23 +38,35 @@
 			<h1>TransportaBits</h1>
 				<h2>Cadastrar Veiculo</h2>
 				<form action="../controller/C_cadastroVeiculo.php" method="POST">
-					<div class="row d-flex justify-content-center mt-2">
-						Modelo: <input type="text" name="modelo" /><br />
+					<div class="container">
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+								Modelo: <input type="text" name="modelo" /><br />
+							</div>
+						</div>
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+								Placa: <input type="text" name="placa" /><br />
+							</div>
+						</div>
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+								Chassi: <input type="text" name="chassi" /><br />
+							</div>
+						</div>
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">	
+								Cor:<br />   <input type="text" name="cor" /><br />	
+							</div>
+						</div>
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">	
+								Ano :<br />  <input type="text" name="ano" /><br />
+							</div>
+						</div>
+						<br />
+						<button class="btn btn-dark" type = "submit"> Cadastrar </button>
 					</div>
-					<div class="row d-flex justify-content-center mt-2">
-						Placa: <input type="text" name="placa" /><br />
-					</div>
-					<div class="row d-flex justify-content-center mt-2">
-					    	Chassi: <input type="text" name="chassi" /><br />
-					</div>
-					<div class="row d-flex justify-content-center mt-2">
-					    	Cor: <input type="text" name="cor" /><br />
-					</div>
-					<div class="row d-flex justify-content-center mt-2">
-					    	Ano: <input type="text" name="ano" /><br />
-					</div>
-					<br />
-					<button class="btn btn-dark" type = "submit"> Cadastrar </button>
 				</form>
 			</div>
 		</div>

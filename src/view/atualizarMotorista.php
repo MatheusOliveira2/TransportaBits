@@ -29,8 +29,8 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav ml-auto">
-						<a class="btn btn-primary" href="gerenciarMotoristas.php" >VOLTAR</a>
-						<a class="btn btn-primary" href="../index.php" >LOGOUT</a>
+						<a class="btn btn-primary minhaNavbar" href="gerenciarMotoristas.php" >VOLTAR</a>
+						<a class="btn btn-primary minhaNavbar" href="../index.php" >LOGOUT</a>
 					</ul>
 				</div>
 			</nav>
@@ -39,14 +39,20 @@
 				<form action="../controller/C_cadastroVeiculo.php" method="POST">
 					<h2>Atualizar Motorista</h2>
 					<br />
-					<div class="row d-flex justify-content-center mt-2">
-						Motorista: <input type="text" name="motorista" /><br />
-					</div>
-					<div class="row d-flex justify-content-center mt-2">
-						Veículo: <input type="text" name="veiculo" /><br />
-					</div>
-					<br />
-					<button class="btn btn-dark" type = "submit"> Atualizar </button>
+					<div class="container">
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+								Motorista: <input type="text" name="motorista" /><br />
+							</div>
+						</div>
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+								Veículo: <input type="text" name="veiculo" /><br />
+							</div>
+						</div>
+						<br />
+						<button class="btn btn-dark" type = "submit"> Atualizar </button>
+						</div>
 				</form>
 			</div>
 		</div>

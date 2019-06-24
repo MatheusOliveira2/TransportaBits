@@ -29,27 +29,34 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav ml-auto">
-						<a class="btn btn-primary" href="gerenciarMotoristas.php" >VOLTAR</a>
-						<a class="btn btn-primary" href="../index.php" >LOGOUT</a>
+						<a class="btn btn-primary minhaNavbar" href="gerenciarMotoristas.php" >VOLTAR</a>
+						<a class="btn btn-primary minhaNavbar" href="../index.php" >LOGOUT</a>
 					</ul>
 				</div>
 			</nav>
 			<div class="col-sm-12 col-md-12 col-lg-12 text-center">
 			<h1>TransportaBits</h1>
-			<h2>Cadastrar Motorista</h2>
 				<form action="../controller/C_cadastroVeiculo.php" method="POST">
-					<h2>Cadastro De Motorista</h2>
-					<div class="row d-flex justify-content-center mt-2">
-						Nome: <input type="text" name="nome" /><br />
-					</div>
-					<div class="row d-flex justify-content-center mt-2">
-						CNH: <input type="text" name="cnh" /><br />
-					</div>
-					<div class="row d-flex justify-content-center mt-2">
-					    	Veículo: <input type="text" name="veiculo" /><br />
-					</div>  
-					<br />
-					<button class="btn btn-dark" type = "submit"> Cadastrar </button>
+					<div class="container">
+						<h2>Cadastro De Motorista</h2>
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+								Nome: <input type="text" name="nome" /><br />
+							</div> 
+						</div>
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+								CNH:<br/> <input type="text" name="cnh" /><br />
+							</div> 
+						</div>
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-3 " style="text-align: left;">
+								Veículo: <input type="text" name="veiculo" /><br />
+							</div> 
+						</div>  
+						<br/>
+						<button class="btn btn-dark" type = "submit"> Cadastrar </button>
+					</div> 
 				</form>
 			</div>
 		</div>

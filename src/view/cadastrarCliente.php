@@ -19,7 +19,7 @@
 						<a class="navbar-brand h1 mb-0" href="#"> <h3>Cadastrar Cliente</h3></a>
 					</ul>
 					<ul class="navbar-nav ml-auto">
-						<a class="btn btn-primary" href="../index.php" >VOLTAR</a>
+						<a class="btn btn-primary minhaNavbar" href="../index.php" >VOLTAR</a>
 					</ul>
 				</div>
 			</nav>

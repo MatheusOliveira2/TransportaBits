@@ -37,8 +37,8 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav ml-auto">
-						<a class="btn btn-primary" href="gerenciarVeiculos.php" >VOLTAR</a>
-						<a class="btn btn-primary" href="../index.php" >LOGOUT</a>
+						<a class="btn btn-primary minhaNavbar" href="gerenciarVeiculos.php" >VOLTAR</a>
+						<a class="btn btn-primary minhaNavbar" href="../index.php" >LOGOUT</a>
 					</ul>
 				</div>
 			</nav>
@@ -51,6 +51,8 @@
 								<option value="<?= $row['Placa'] ?>"><?= $row['Placa'] ?></option>
 							<?php endwhile ?>
 						</select>
+						<br/>
+						<br/>
 						<button class="btn btn-dark" type = "submit"> Consultar </button>
 				</form>
 			</div>
