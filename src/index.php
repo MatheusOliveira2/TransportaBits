@@ -20,10 +20,14 @@
 				<form action="controller/C_cadastroVeiculo.php" method="POST">
 					<h2>Login</h2>
 					<div class="row d-flex justify-content-center mt-2">
-						CNPJ <input type="text" name="cnpj" /><br />
+							<div class="col-3 " style="text-align: left;">
+								CNPJ:<br /> <input type="text" name="cnpj" /><br />
+							</div>
 					</div>
 					<div class="row d-flex justify-content-center mt-2">
-						Senha: <input type="password" name="senha" /><br />
+						<div class="col-3 " style="text-align: left;">
+							Senha:<br /> <input type="password" name="senha" /><br />
+						</div>
 					</div> 
 					<br />
 					<a class="btn btn-dark" href="view/gerenciarFrota.php"> Login </a>
