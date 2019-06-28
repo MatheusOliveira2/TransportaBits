@@ -9,6 +9,17 @@
 		<script type="text/javascript" src="../node_modules/popper.js/dist/umd/popper.js"></script>
 		<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 		<title>Gerenciar Motoristas</title>
+		<style>
+			.myBtn{
+				font-size: 18px;
+				width: 200px;
+				border-radius:4px;
+				padding: 3px;
+				color: #007bff;
+				background-color: white;
+				border-color: #007bff;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -36,20 +47,35 @@
 			</nav>
 
 			<div class="col-sm-12 col-md-12 col-lg-12 text-center">
-			<h1>TransportaBits</h1>
-				<h2>Gerenciamento de Motoristas</h2>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h1 mt-2">
+							Transporta Bits
+						</p>
+					</div>
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h2 mt-2">
+							Gerenciar Motoristas
+						</p>
+					</div>
+				</div>
 				<br />
 
-				<div class="row d-flex justify-content-center mt-2">
-					<a href="atualizarMotorista.php" class="btn btn-dark btn-default ">Atualizar Motoristas</a><br />
+				<div class="row d-flex justify-content-center mt-4">
+					<button type="button" onclick="location.href='atualizarMotorista.php';" class="myBtn ">Atualizar Motoristas</button><br />
 				</div>
-				<div class="row d-flex justify-content-center mt-2" >
-					<a href="cadastrarMotorista.php" class="btn btn-dark"> Cadastrar Motoristas</a><br />
+				<div class="row d-flex justify-content-center mt-4" >
+					<button type="button" onclick="location.href='cadastrarMotorista.php';" class="myBtn"> Cadastrar Motoristas</button><br />
 				</div>
-				<div class="row d-flex justify-content-center mt-2">
-					<a href="consultarMotorista.php" class="btn btn-dark btn-default"> Consultar Motoristas</a><br />
+				<div class="row d-flex justify-content-center mt-4">
+					<button type="button" onclick="location.href='consultarMotorista.php';" class="myBtn"> Consultar Motoristas</button><br />
 				</div>
 			</div>
 		</div>
+		<footer class="fixed-bottom bg-primary">
+			<div class="footer-copyright text-center py-3 text-white">
+				© 2019 Copyright: Luis Felype Fioravanti & Matheus Oliveira
+			</div>
+		</footer>
 	</body>
 </html>

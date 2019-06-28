@@ -10,9 +10,6 @@
 	<script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.js"></script>
 	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	<title>Login</title>
-</head>
-
-<body>
 	<style>
 	.myBtn{
 		font-size: 12px;
@@ -24,6 +21,9 @@
 		border-color: #007bff;
 	}
 	</style>
+</head>
+
+<body>
 
 	<div class="container-fluid">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
@@ -62,12 +62,18 @@
 					</div>
 				</div>
 				<br />
-				<button type="button" onclick="location.href='view/gerenciarFrota.php';"class="myBtn mr-2" href="view/gerenciarFrota.php"> Login </button>
+				<button type="button" onclick="location.href='view/gerenciarFrota.php';" class="myBtn mr-2" href="view/gerenciarFrota.php"> Login </button>
 				<button type="button" onclick="location.href='view/cadastrarCliente.php';"  class="myBtn">Cadastrar</button>
 
 			</form>
 		</div>
 	</div>
+	<footer class="fixed-bottom bg-primary">
+		<div class="footer-copyright text-center py-3 text-white">
+			© 2019 Copyright: Luis Felype Fioravanti & Matheus Oliveira
+		</div>
+	</footer>
+
 </body>
 
 </html>

@@ -9,6 +9,17 @@
 		<script type="text/javascript" src="../node_modules/popper.js/dist/umd/popper.js"></script>
 		<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 		<title>Cadastrar</title>
+		<style>
+			.myBtn{
+				font-size: 18px;
+				width: 150px;
+				border-radius:4px;
+				padding: 3px;
+				color: #007bff;
+				background-color: white;
+				border-color: #007bff;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -35,30 +46,57 @@
 				</div>
 			</nav>
 			<div class="col-sm-12 col-md-12 col-lg-12 text-center">
-			<h1>TransportaBits</h1>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h1 mt-2">
+							Transporta Bits
+						</p>
+					</div>
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h2 mt-2">
+							Cadastrar Motorista
+						</p>
+					</div>
+				</div>
 				<form action="../controller/C_cadastroVeiculo.php" method="POST">
 					<div class="container">
-						<h2>Cadastro De Motorista</h2>
 						<div class="row d-flex justify-content-center mt-2">
-							<div class="col-3 " style="text-align: left;">
-								Nome: <input type="text" name="nome" /><br />
-							</div> 
+							<div class="col-12" style="text-align: center;margin-right:160px ">Nome</div>
 						</div>
-						<div class="row d-flex justify-content-center mt-2">
-							<div class="col-3 " style="text-align: left;">
-								CNH:<br/> <input type="text" name="cnh" /><br />
-							</div> 
+						<div class="row d-flex justify-content-center">
+							<div class="col-12 " style="text-align: center;">
+								<input type="text" name="nome" />
+							</div>
 						</div>
+
 						<div class="row d-flex justify-content-center mt-2">
-							<div class="col-3 " style="text-align: left;">
-								Veículo: <input type="text" name="veiculo" /><br />
-							</div> 
-						</div>  
+							<div class="col-12" style="text-align: center;margin-right:170px ">CNH</div>
+						</div>
+						<div class="row d-flex justify-content-center">
+							<div class="col-12 " style="text-align: center;">
+								<input type="text" name="cnh" />
+							</div>
+						</div>
+
+						<div class="row d-flex justify-content-center mt-2">
+							<div class="col-12" style="text-align: center;margin-right:150px ">Veículo</div>
+						</div>
+						<div class="row d-flex justify-content-center">
+							<div class="col-12 " style="text-align: center;">
+							<input type="text" name="veiculo" />
+							</div>
+						</div>
+					
 						<br/>
-						<button class="btn btn-dark" type = "submit"> Cadastrar </button>
+						<button class="myBtn mr-2" type = "submit"> Cadastrar </button>
 					</div> 
 				</form>
 			</div>
 		</div>
+		<footer class="fixed-bottom bg-primary">
+			<div class="footer-copyright text-center py-3 text-white">
+				© 2019 Copyright: Luis Felype Fioravanti & Matheus Oliveira
+			</div>
+		</footer>
 	</body>
 </html>

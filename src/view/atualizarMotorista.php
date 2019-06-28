@@ -6,9 +6,20 @@
 		<link href="../node_modules/bootstrap/compiler/bootstrap.css" rel="stylesheet" type="text/css"/>
 		<link href="../node_modules/bootstrap/compiler/styles.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
-		<script type="text/javascript" src="../node_modules/popper.js/dist/popper.js"></script>
+		<script type="text/javascript" src="../node_modules/popper.js/dist/umd/popper.js"></script>
 		<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 		<title>Atualizar</title>
+		<style>
+			.myBtn{
+				font-size: 18px;
+				width: 150px;
+				border-radius:4px;
+				padding: 3px;
+				color: #007bff;
+				background-color: white;
+				border-color: #007bff;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -34,27 +45,50 @@
 					</ul>
 				</div>
 			</nav>
-			<div class="col-sm-12 col-md-12 col-lg-12 text-center">
-			<h1>TransportaBits</h1>
+			<div class="form-group col-sm-12 col-md-12 col-lg-12 text-center">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h1 mt-2">
+							Transporta Bits
+						</p>
+					</div>
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h2 mt-2">
+							Atualizar Motorista
+						</p>
+					</div>
+				</div>
 				<form action="../controller/C_cadastroVeiculo.php" method="POST">
-					<h2>Atualizar Motorista</h2>
 					<br />
 					<div class="container">
 						<div class="row d-flex justify-content-center mt-2">
-							<div class="col-3 " style="text-align: left;">
-								Motorista: <input type="text" name="motorista" /><br />
+							<div class="col-12" style="text-align: center;margin-right:140px ">Motorista</div>
+						</div>
+						<div class="row d-flex justify-content-center">
+							<div class="col-12 " style="text-align: center;">
+							<input type="text" name="motorista" /><br />
 							</div>
 						</div>
+
 						<div class="row d-flex justify-content-center mt-2">
-							<div class="col-3 " style="text-align: left;">
-								Veículo: <input type="text" name="veiculo" /><br />
+							<div class="col-12" style="text-align: center;margin-right:150px ">Veículo</div>
+						</div>
+						<div class="row d-flex justify-content-center">
+							<div class="col-12 " style="text-align: center;">
+								<input type="text" name="veiculo" /><br />
 							</div>
 						</div>
+						
 						<br />
-						<button class="btn btn-dark" type = "submit"> Atualizar </button>
+						<button class="myBtn mr-2" type = "submit"> Atualizar </button>
 						</div>
 				</form>
 			</div>
 		</div>
+		<footer class="fixed-bottom bg-primary">
+			<div class="footer-copyright text-center py-3 text-white">
+				© 2019 Copyright: Luis Felype Fioravanti & Matheus Oliveira
+			</div>
+		</footer>
 	</body>
 </html>

@@ -9,6 +9,17 @@
 		<script type="text/javascript" src="../node_modules/popper.js/dist/umd/popper.js"></script>
 		<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 		<title>Gerenciar Frota</title>
+		<style>
+			.myBtn{
+				font-size: 18px;
+				width: 210px;
+				border-radius:4px;
+				padding: 3px;
+				color: #007bff;
+				background-color: white;
+				border-color: #007bff;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -35,23 +46,37 @@
 			</nav>
 
 			<div class="col-sm-12 col-md-12 col-lg-12 text-center">
-			<h1>TransportaBits</h1>
-				<h2>Gerenciamento de Frota</h2>
-				<br />
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h1 mt-2">
+							Transporta Bits
+						</p>
+					</div>
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h2 mt-2">
+							Gerenciar Frota
+						</p>
+					</div>
+				</div>
 
-				<div class="row d-flex justify-content-center mt-2">
-					<a href="gerenciarConta.php" class="btn btn-dark btn-default">Gerenciar Conta</a><br />
+				<div class="row d-flex justify-content-center mt-4">
+					<button type="button" onclick="location.href='gerenciarConta.php';" class="myBtn mr-4">Gerenciar Conta</button><br />
 				</div>
-				<div class="row d-flex justify-content-center mt-2" >
-					<a href="gerenciarMotoristas	.php" class="btn btn-dark">Gerenciar Motoristas</a><br />
+				<div class="row d-flex justify-content-center mt-4" >
+					<button type="button" onclick="location.href='gerenciarMotoristas.php';" class="myBtn mr-4"">Gerenciar Motoristas</button><br />
 				</div>
-				<div class="row d-flex justify-content-center mt-2">
-					<a href="gerenciarRastreadores.php" class="btn btn-dark btn-default ">Gerenciar Rastreadores</a><br />
+				<div class="row d-flex justify-content-center mt-4">
+					<button type="button" onclick="location.href='gerenciarRastreadores.php';" class="myBtn mr-4">Gerenciar Rastreadores</button><br />
 				</div>
-				<div class="row d-flex justify-content-center mt-2">
-					<a href="gerenciarVeiculos.php" class="btn btn-dark btn-default">Gerenciar Veiculos</a><br />
+				<div class="row d-flex justify-content-center mt-4">
+					<button type="button" onclick="location.href='gerenciarVeiculos.php';" class="myBtn mr-4">Gerenciar Veiculos</button><br />
 				</div>
 			</div>
 		</div>
+		<footer class="fixed-bottom bg-primary">
+			<div class="footer-copyright text-center py-3 text-white">
+				© 2019 Copyright: Luis Felype Fioravanti & Matheus Oliveira
+			</div>
+		</footer>
 	</body>
 </html>

@@ -9,6 +9,17 @@
 		<script type="text/javascript" src="../node_modules/popper.js/dist/umd/popper.js"></script>
 		<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 		<title>Cadastrar</title>
+		<style>
+			.myBtn{
+			font-size: 12px;
+			width: 80px;
+			border-radius:4px;
+			padding: 3px;
+			color: #007bff;
+			background-color: white;
+			border-color: #007bff;
+		}
+		</style>
 	</head>
 
 	<body>
@@ -24,26 +35,63 @@
 				</div>
 			</nav>
 			<div class="col-sm-12 col-md-12 col-lg-12 text-center">
-			<h1>TransportaBits</h1>
-				<h2>Cadastrar Cliente</h2>
-				<form action="../controller/C_cadastroVeiculo.php" method="POST">
-					<h2>Cadastro de Cliente</h2>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h1 mt-2">
+							Transporta Bits
+						</p>
+					</div>
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h2 mt-2">
+						Cadastrar Cliente
+						</p>
+					</div>
+				</div>
+				<form action="../controller/C_cadastroVeiculo.php" method="POST">	
+					<div class="row d-flex justify-content-center mt-4">
+						<div class="col-12" style="text-align: center;margin-right:160px ">CNPJ</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<div class="col-12 " style="text-align: center;">
+							<input type="text" name="cnpj" />
+						</div>
+					</div>
+					
 					<div class="row d-flex justify-content-center mt-2">
-						CNPJ: <input type="text" name="cnpj" /><br />
+						<div class="col-12" style="text-align: center;margin-right:160px ">E-mail</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<div class="col-12 " style="text-align: center;">
+							<input type="text" name="email" />
+						</div>
 					</div>
 					<div class="row d-flex justify-content-center mt-2">
-						E-mail: <input type="text" name="email" /><br />
+						<div class="col-12" style="text-align: center;margin-right:135px ">Endereço</div>
 					</div>
+					<div class="row d-flex justify-content-center">
+						<div class="col-12 " style="text-align: center;">
+							<input type="text" name="endereco" />
+						</div>
+					</div>
+
 					<div class="row d-flex justify-content-center mt-2">
-					    	Endereço: <input type="text" name="endereco" /><br />
-                    </div>  
-                    <div class="row d-flex justify-content-center mt-2">
-					    	Senha: <input type="password" name="senha" /><br />
-					</div>  
+						<div class="col-12" style="text-align: center;margin-right:160px ">Senha</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<div class="col-12 " style="text-align: center;">
+							<input type="password" name="senha" /><br />
+						</div>
+					</div>
+
 					<br />
-                    <button class="btn btn-dark" type = "submit"> Cadastrar </button>
+                    <button class="myBtn mr-2" type = "submit"> Cadastrar </button>
 				</form>
 			</div>
 		</div>
+		<footer class="fixed-bottom bg-primary">
+			<div class="footer-copyright text-center py-3 text-white">
+				© 2019 Copyright: Luis Felype Fioravanti & Matheus Oliveira
+			</div>
+		</footer>
 	</body>
 </html>
