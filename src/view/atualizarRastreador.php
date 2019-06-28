@@ -1,4 +1,4 @@
-<!-- Interface com os campos necessários para atualizar os dados de veículos -->
+<!-- Interface com os campos necessários para atualizar os dados de rastreadores -->
 
 <?php
 include_once("../persistence/conexao.php");

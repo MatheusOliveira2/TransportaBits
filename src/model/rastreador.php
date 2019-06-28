@@ -1,5 +1,5 @@
 <?php 
-#Classe motorista com os métodos e atriutos necessários
+#Classe rastreador com os métodos e atriutos necessários
 include_once("../persistence/conexao.php");
 class Rastreador{
     private $modelo;

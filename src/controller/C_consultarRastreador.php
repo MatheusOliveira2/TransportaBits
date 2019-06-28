@@ -1,5 +1,5 @@
 <?php
-#Controlador responsável por buscar as informações de veículos
+#Controlador responsável por buscar as informações de rastreadores
 include_once("../persistence/conexao.php");
 include_once("../persistence/rastreadorDAO.php");
 

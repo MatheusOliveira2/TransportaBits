@@ -1,5 +1,5 @@
 <?php
-	#Controlador responsável por atualizar as informações de veículo
+	#Controlador responsável por atualizar as informações de Motorista
 	include_once("../persistence/conexao.php");
 	include_once("../persistence/motoristaDAO.php");
 	

@@ -1,4 +1,4 @@
-<!-- Interface com os campos necessários para cadastras veículos -->
+<!-- Interface com os campos necessários atualizar e/ou excluir os dados do cliente -->
 
 <html>
 

@@ -1,4 +1,4 @@
-<!-- Interface com os campos necessários para cadastras veículos -->
+<!-- Interface com os campos necessários para cadastrar rastreadores -->
 <?php
 include_once("../persistence/conexao.php");
 $conexao = new Connection();

@@ -1,5 +1,5 @@
 <?php
-#Classe responsável por comunicar com o banco de dados, com a tabela veículos.
+#Classe responsável por realizar a autenticação do login
 include_once("../model/cliente.php");
 session_start();
 class loginAut

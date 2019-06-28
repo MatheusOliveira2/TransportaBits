@@ -1,4 +1,4 @@
-<!-- Interface com os campos necessários para navegar entre as opções de cadastrar, buscar, atualizar e excluir veículos -->
+<!-- Interface com os campos necessários para navegar entre as opções de cadastrar, buscar, atualizar e excluir rastreadores -->
 
 <html lang="pt-br">
 <head>

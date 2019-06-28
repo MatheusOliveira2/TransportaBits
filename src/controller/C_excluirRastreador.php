@@ -1,5 +1,5 @@
 <?php
-	#Controlador responsável por excluir os veiculos do banco de dados.
+	#Controlador responsável por excluir os rastreadores do banco de dados.
 	include_once("../persistence/conexao.php");
 	include_once("../persistence/rastreadorDAO.php");
 	

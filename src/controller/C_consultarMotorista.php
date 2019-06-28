@@ -1,5 +1,5 @@
 <?php
-#Controlador responsável por buscar as informações de veículos
+#Controlador responsável por buscar as informações de motoristas
 include_once("../persistence/conexao.php");
 include_once("../persistence/motoristaDAO.php");
 
