@@ -20,6 +20,26 @@ $resultsdois = mysqli_query($conexao->getLink(), $querydois);
 	<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../node_modules/js/sweetalert.js"></script>
 	<title>Atualizar</title>
+	<style>
+		.myCombo{
+			font-size: 18px;
+			width: 150px;
+			border-radius:4px;
+			padding: 3px;
+			color: #000000;
+			background-color: white;
+			border-color: #007bff;
+		}
+		.myBtn {
+			font-size: 18px;
+			width: 210px;
+			border-radius: 4px;
+			padding: 3px;
+			color: #007bff;
+			background-color: white;
+			border-color: #007bff;
+		}
+	</style>
 </head>
 
 <body>
@@ -41,38 +61,52 @@ $resultsdois = mysqli_query($conexao->getLink(), $querydois);
 				</ul>
 				<ul class="navbar-nav ml-auto">
 					<a class="btn btn-primary minhaNavbar" href="gerenciarMotoristas.php">VOLTAR</a>
-					<a class="btn btn-primary minhaNavbar" href="../index.php">LOGOUT</a>
+					<a class="btn btn-primary minhaNavbar" href="../controller/C_logout.php">LOGOUT</a>
 				</ul>
 			</div>
 		</nav>
 		<div class="col-sm-12 col-md-12 col-lg-12 text-center">
-			<h1>TransportaBits</h1>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<p class="text-primary h1 mt-2">
+						Transporta Bits
+					</p>
+				</div>
+				<div class="col-sm-12 text-center">
+					<p class="text-primary h2 mt-2">
+						Atualizar Motorista
+					</p>
+				</div>
+			</div>
 			<form action="../controller/C_atualizarMotorista.php" method="POST">
-				<h2>Atualizar Motorista</h2>
 				<br />
 				<div class="container">
 					<div class="row d-flex justify-content-center mt-2">
-						<div class="col-3 " style="text-align: left;">
-							Motorista:
-							<select name="cnh">
-								<?php while ($row = $resultsdois->fetch_assoc()) : ?>
-									<option value="<?= $row['CNH'] ?>"><?= $row['CNH'] ?></option>
-								<?php endwhile ?>
-							</select>
+						<div class="col-12" style="text-align: center;margin-right:90px ">Motorista</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+							<div class="col-12 " style="text-align: center;">
+								<select  class="myCombo mr-2" name="cnh" style="text-align: center;margin-right:8px">
+									<?php while ($row = $resultsdois->fetch_assoc()) : ?>
+										<option value="<?= $row['CNH'] ?>"><?= $row['CNH'] ?></option>
+									<?php endwhile ?>
+								</select>
 						</div>
 					</div>
 					<div class="row d-flex justify-content-center mt-2">
-						<div class="col-3 " style="text-align: left;">
-							Veículo:
-							<select name="veiculo">
-								<?php while ($rowdois = $results->fetch_assoc()) : ?>
-									<option value="<?= $rowdois['Placa'] ?>"><?= $rowdois['Placa'] ?></option>
-								<?php endwhile ?>
-							</select>
+						<div class="col-12" style="text-align: center;margin-right:100px ">Veiculo</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+							<div class="col-12 " style="text-align: center;">
+								<select  class="myCombo mr-2" name="veiculo" style="text-align: center;margin-right:8px">
+									<?php while ($rowdois = $results->fetch_assoc()) : ?>
+										<option value="<?= $rowdois['Placa'] ?>"><?= $rowdois['Placa'] ?></option>
+									<?php endwhile ?>
+								</select>
 						</div>
 					</div>
 					<br />
-					<button class="btn btn-dark" type="submit"> Atualizar </button>
+					<button class="myBtn" type="submit"> Atualizar </button>
 				</div>
 			</form>
 			<?php if (isset($_GET['funcionou']) and $_GET['funcionou'] == "false") { ?>
@@ -94,6 +128,12 @@ $resultsdois = mysqli_query($conexao->getLink(), $querydois);
 			<?php } ?>
 		</div>
 	</div>
+
+	<footer class="fixed-bottom bg-primary">
+		<div class="footer-copyright text-center py-3 text-white">
+			© 2019 Copyright: Luis Felype Fioravanti & Matheus Oliveira
+		</div>
+	</footer>
 </body>
 
 </html>

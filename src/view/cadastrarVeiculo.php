@@ -11,6 +11,26 @@
 	<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../node_modules/js/sweetalert.js"></script>
 	<title>Cadastrar</title>
+	<style>
+		.myCombo{
+			font-size: 18px;
+			width: 150px;
+			border-radius:4px;
+			padding: 3px;
+			color: #000000;
+			background-color: white;
+			border-color: #007bff;
+		}
+		.myBtn {
+			font-size: 18px;
+			width: 210px;
+			border-radius: 4px;
+			padding: 3px;
+			color: #007bff;
+			background-color: white;
+			border-color: #007bff;
+		}
+	</style>
 </head>
 
 <body>
@@ -32,42 +52,67 @@
 				</ul>
 				<ul class="navbar-nav ml-auto">
 					<a class="btn btn-primary minhaNavbar" href="gerenciarVeiculos.php">VOLTAR</a>
-					<a class="btn btn-primary minhaNavbar" href="../index.php">LOGOUT</a>
+					<a class="btn btn-primary minhaNavbar" href="../controller/C_logout.php">LOGOUT</a>
 				</ul>
 			</div>
 		</nav>
 		<div class="col-sm-12 col-md-12 col-lg-12 text-center">
-			<h1>TransportaBits</h1>
-			<h2>Cadastrar Veiculo</h2>
+		<div class="row">
+				<div class="col-sm-12 text-center">
+					<p class="text-primary h1 mt-2">
+						Transporta Bits
+					</p>
+				</div>
+				<div class="col-sm-12 text-center">
+					<p class="text-primary h2 mt-2">
+						Cadastrar Rastreador
+					</p>
+				</div>
+			</div>
 			<form action="../controller/C_cadastroVeiculo.php" method="POST">
 				<div class="container">
 					<div class="row d-flex justify-content-center mt-2">
-						<div class="col-3 " style="text-align: left;">
-							Modelo: <input type="text" name="modelo" /><br />
+						<div class="col-12" style="text-align: center;margin-right:150px ">Modelo</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<div class="col-12 " style="text-align: center;">
+							<input type="text" name="modelo" /><br />
 						</div>
 					</div>
 					<div class="row d-flex justify-content-center mt-2">
-						<div class="col-3 " style="text-align: left;">
-							Placa: <input type="text" name="placa" /><br />
+						<div class="col-12" style="text-align: center;margin-right:160px ">Placa</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<div class="col-12 " style="text-align: center;">
+							<input type="text" name="placa" /><br />
 						</div>
 					</div>
 					<div class="row d-flex justify-content-center mt-2">
-						<div class="col-3 " style="text-align: left;">
-							Chassi: <input type="text" name="chassi" /><br />
+						<div class="col-12" style="text-align: center;margin-right:150px ">Chassi</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<div class="col-12 " style="text-align: center;">
+							<input type="text" name="chassi" /><br />
 						</div>
 					</div>
 					<div class="row d-flex justify-content-center mt-2">
-						<div class="col-3 " style="text-align: left;">
-							Cor:<br /> <input type="text" name="cor" /><br />
+						<div class="col-12" style="text-align: center;margin-right:180px ">Cor</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<div class="col-12 " style="text-align: center;">
+							<input type="text" name="cor" /><br />
 						</div>
 					</div>
 					<div class="row d-flex justify-content-center mt-2">
-						<div class="col-3 " style="text-align: left;">
-							Ano :<br /> <input type="text" name="ano" /><br />
+						<div class="col-12" style="text-align: center;margin-right:175px ">Ano</div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<div class="col-12 " style="text-align: center;">
+							<input type="text" name="ano" /><br />
 						</div>
 					</div>
 					<br />
-					<button class="btn btn-dark" type="submit"> Cadastrar </button>
+					<button class="myBtn" type="submit"> Cadastrar </button>
 				</div>
 			</form>
 			<?php if (isset($_GET['funcionou']) and $_GET['funcionou'] == "false") { ?>
@@ -89,6 +134,11 @@
 			<?php } ?>
 		</div>
 	</div>
+	<footer class="fixed-bottom bg-primary">
+		<div class="footer-copyright text-center py-3 text-white">
+			© 2019 Copyright: Luis Felype Fioravanti & Matheus Oliveira
+		</div>
+	</footer>
 </body>
 
 </html>

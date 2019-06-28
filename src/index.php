@@ -11,9 +11,6 @@
 	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	<script type="text/javascript" src="node_modules/js/sweetalert.js"></script>
 	<title>Login</title>
-</head>
-
-<body>
 	<style>
 		.myBtn {
 			font-size: 12px;
@@ -25,6 +22,9 @@
 			border-color: #007bff;
 		}
 	</style>
+</head>
+
+<body>
 
 	<div class="container-fluid">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
@@ -101,6 +101,11 @@
 
 
 	</div>
+	<footer class="fixed-bottom bg-primary">
+		<div class="footer-copyright text-center py-3 text-white">
+			© 2019 Copyright: Luis Felype Fioravanti & Matheus Oliveira
+		</div>
+	</footer>
 </body>
 
 </html>

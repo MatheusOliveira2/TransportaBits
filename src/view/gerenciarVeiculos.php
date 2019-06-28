@@ -9,6 +9,17 @@
 		<script type="text/javascript" src="../node_modules/popper.js/dist/umd/popper.js"></script>
 		<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 		<title>Gerenciar Veículos</title>
+		<style>
+		.myBtn {
+			font-size: 18px;
+			width: 210px;
+			border-radius: 4px;
+			padding: 3px;
+			color: #007bff;
+			background-color: white;
+			border-color: #007bff;
+		}
+		</style>
 	</head>
 
 	<body>
@@ -30,26 +41,41 @@
 					</ul>
 					<ul class="navbar-nav ml-auto">
 						<a class="btn btn-primary minhaNavbar" href="gerenciarFrota.php" >VOLTAR</a>
-						<a class="btn btn-primary minhaNavbar" href="../index.php" >LOGOUT</a>
+						<a class="btn btn-primary minhaNavbar" href="../controller/C_logout.php">LOGOUT</a>
 					</ul>
 				</div>
 			</nav>
 
 			<div class="col-sm-12 col-md-12 col-lg-12 text-center">
-			<h1>TransportaBits</h1>
-			<h2>Gerenciamento de Veículos</h2>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h1 mt-2">
+							Transporta Bits
+						</p>
+					</div>
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h2 mt-2">
+							Gerenciar Veiculos
+						</p>
+					</div>
+				</div>
 				<br />
 
-				<div class="row d-flex justify-content-center mt-2">
-					<a href="atualizarVeiculo.php" class="btn btn-dark btn-default "> Atualizar Veiculo</a><br />
+				<div class="row d-flex justify-content-center mt-4">
+					<button onclick="location.href='atualizarVeiculo.php';" class="myBtn"> Atualizar Veiculos</button><br />
 				</div>
-				<div class="row d-flex justify-content-center mt-2" >
-					<a href="cadastrarVeiculo.php" class="btn btn-dark"> Cadastrar Veiculo</a><br />
+				<div class="row d-flex justify-content-center mt-4" >
+					<button onclick="location.href='cadastrarVeiculo.php';" class="myBtn"> Cadastrar Veiculos</button><br />
 				</div>
-				<div class="row d-flex justify-content-center mt-2">
-					<a href="consultarVeiculo.php" class="btn btn-dark btn-default"> Consultar Veiculo</a><br />
+				<div class="row d-flex justify-content-center mt-4">
+					<button onclick="location.href='consultarVeiculo.php';" class="myBtn"> Consultar Veiculos</button><br />
 				</div>
 			</div>
 		</div>
+		<footer class="fixed-bottom bg-primary">
+			<div class="footer-copyright text-center py-3 text-white">
+				© 2019 Copyright: Luis Felype Fioravanti & Matheus Oliveira
+			</div>
+		</footer>
 	</body>
 </html>

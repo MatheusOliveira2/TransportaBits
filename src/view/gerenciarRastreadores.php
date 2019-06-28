@@ -9,6 +9,17 @@
 		<script type="text/javascript" src="../node_modules/popper.js/dist/umd/popper.js"></script>
 		<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 		<title>Gerenciar Rastreadores</title>
+		<style>
+		.myBtn {
+			font-size: 18px;
+			width: 210px;
+			border-radius: 4px;
+			padding: 3px;
+			color: #007bff;
+			background-color: white;
+			border-color: #007bff;
+		}
+		</style>
 	</head>
 
 	<body>
@@ -30,26 +41,41 @@
 					</ul>
 					<ul class="navbar-nav ml-auto">
 						<a class="btn btn-primary minhaNavbar" href="gerenciarFrota.php" >VOLTAR</a>
-						<a class="btn btn-primary minhaNavbar" href="../index.php" >LOGOUT</a>
+						<a class="btn btn-primary minhaNavbar" href="../controller/C_logout.php">LOGOUT</a>
 					</ul>
 				</div>
 			</nav>
 
 			<div class="col-sm-12 col-md-12 col-lg-12 text-center">
-			<h1>TransportaBits</h1>
-				<h2>Gerenciamento de Rastreadores</h2>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h1 mt-2">
+							Transporta Bits
+						</p>
+					</div>
+					<div class="col-sm-12 text-center">
+						<p class="text-primary h2 mt-2">
+							Gerenciar Rastreadores
+						</p>
+					</div>
+				</div>
 				<br />
 
-				<div class="row d-flex justify-content-center mt-2">
-					<a href="atualizarRastreador.php" class="btn btn-dark btn-default ">Atualizar Rastreadores</a><br />
+				<div class="row d-flex justify-content-center mt-4">
+					<button onclick="location.href='atualizarRastreador.php';" class="myBtn ">Atualizar Rastreadores</button><br />
 				</div>
-				<div class="row d-flex justify-content-center mt-2" >
-					<a href="cadastrarRastreador.php" class="btn btn-dark"> Cadastrar Rastreadores</a><br />
+				<div class="row d-flex justify-content-center mt-4" >
+					<button onclick="location.href='cadastrarRastreador.php';" class="myBtn"> Cadastrar Rastreadores</button><br />
 				</div>
-				<div class="row d-flex justify-content-center mt-2">
-					<a href="consultarRastreador.php" class="btn btn-dark btn-default"> Consultar Rastreadores</a><br />
+				<div class="row d-flex justify-content-center mt-4">
+					<button onclick="location.href='consultarRastreador.php';" class="myBtn"> Consultar Rastreadores</button><br />
 				</div>
 			</div>
 		</div>
+		<footer class="fixed-bottom bg-primary">
+			<div class="footer-copyright text-center py-3 text-white">
+				© 2019 Copyright: Luis Felype Fioravanti & Matheus Oliveira
+			</div>
+		</footer>
 	</body>
 </html>
