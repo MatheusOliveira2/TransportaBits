@@ -16,7 +16,7 @@
 <body>
 	<style>
 		.myBtnRed {
-			font-size: 12px;
+			font-size: 18px;
 			width: 80px;
 			border-radius: 4px;
 			padding: 3px;
@@ -26,7 +26,7 @@
 		}
 		.myBtn {
 			font-size: 18px;
-			width: 210px;
+			width: 120px;
 			border-radius: 4px;
 			padding: 3px;
 			color: #007bff;
@@ -101,7 +101,7 @@
 
 							<br />
 							<button class="myBtn" type = "submit"> Atualizar </button>
-					<button onclick="location.href='../controller/C_excluirCliente.php';" type="button" class="myBtnRed">Excluir</button>
+							<button onclick="location.href='../controller/C_excluirCliente.php';" type="button" class="myBtnRed">Excluir</button>
 				</div>
 			</form>
 			<?php if (isset($_GET['funcionou']) and $_GET['funcionou'] == "false") { ?>
