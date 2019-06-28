@@ -41,7 +41,7 @@
 					</ul>
 					<ul class="navbar-nav ml-auto">
 						<a class="btn btn-primary minhaNavbar" href="gerenciarFrota.php" >VOLTAR</a>
-						<a class="btn btn-primary minhaNavbar" href="../controller/C_logout.php">LOGOUT</a>
+						<a class="btn btn-primary minhaNavbar" href="../controller/C_logout.php">LOGOUT</a>		
 					</ul>
 				</div>
 			</nav>
