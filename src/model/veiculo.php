@@ -16,13 +16,7 @@ class Veiculo{
         $this->ano = $pAno;
     }
 
-    public function cadastrarVeiculo(){
-        $con = new Connection();
-        $con->conectar();
-        $querry = "INSERT INTO Veiculo VALUE('$this->modelo', '$this->placa', '$this->chassi', '$this->cor', $this->ano)";
-        $resultado = mysqli_query($con->getLink(),$querry);
-        $con->fechar();
-    }
+   
 
     public function getModelo(){
         return $this->modelo;

@@ -12,7 +12,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- Schema TransportaBits
 -- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS `TransportaBits` DEFAULT CHARACTER SET utf8 ;
-USE `TransportaBits` ;
+USE `TransportaBits`;
 
 -- -----------------------------------------------------
 -- Table `TransportaBits`.`Cliente`
@@ -37,8 +37,15 @@ CREATE TABLE IF NOT EXISTS `TransportaBits`.`Veiculo` (
   `Chassi` CHAR(17) NOT NULL,
   `Cor` VARCHAR(12) NOT NULL,
   `Ano` YEAR NOT NULL,
-  PRIMARY KEY (`Placa`),
-  UNIQUE INDEX `Chassi_UNIQUE` (`Chassi` ASC))
+  `Cliente_CNPJ` BIGINT(14) NOT NULL,
+  PRIMARY KEY (`Placa`, `Cliente_CNPJ`),
+  UNIQUE INDEX `Chassi_UNIQUE` (`Chassi` ASC),
+  INDEX `fk_Veiculo_Cliente1_idx` (`Cliente_CNPJ` ASC),
+  CONSTRAINT `fk_Veiculo_Cliente1`
+    FOREIGN KEY (`Cliente_CNPJ`)
+    REFERENCES `TransportaBits`.`Cliente` (`CNPJ`)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
@@ -49,7 +56,7 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `TransportaBits`.`Motorista` (
   `CNH` BIGINT(11) NOT NULL,
   `Nome` VARCHAR(40) NOT NULL,
-  `Veiculo_Placa` CHAR(7) NOT NULL,
+  `Veiculo_Placa` CHAR(7) NOT NULL UNIQUE,
   `Cliente_CNPJ` BIGINT(14) NOT NULL,
   PRIMARY KEY (`CNH`, `Veiculo_Placa`, `Cliente_CNPJ`),
   INDEX `fk_Motorista_Veiculo1_idx` (`Veiculo_Placa` ASC),
@@ -62,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `TransportaBits`.`Motorista` (
   CONSTRAINT `fk_Motorista_Cliente1`
     FOREIGN KEY (`Cliente_CNPJ`)
     REFERENCES `TransportaBits`.`Cliente` (`CNPJ`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
@@ -74,7 +81,7 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `TransportaBits`.`Rastreador` (
   `NSerie` INT(10) NOT NULL,
   `Modelo` VARCHAR(12) NULL DEFAULT NULL,
-  `Veiculo_Placa` CHAR(7) NOT NULL,
+  `Veiculo_Placa` CHAR(7) NOT NULL UNIQUE,
   `Cliente_CNPJ` BIGINT(14) NOT NULL,
   PRIMARY KEY (`NSerie`, `Veiculo_Placa`, `Cliente_CNPJ`),
   INDEX `fk_Rastreador_Veiculo1_idx` (`Veiculo_Placa` ASC),
@@ -87,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `TransportaBits`.`Rastreador` (
   CONSTRAINT `fk_Rastreador_Cliente1`
     FOREIGN KEY (`Cliente_CNPJ`)
     REFERENCES `TransportaBits`.`Cliente` (`CNPJ`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;

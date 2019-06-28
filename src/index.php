@@ -9,20 +9,21 @@
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.js"></script>
 	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="node_modules/js/sweetalert.js"></script>
 	<title>Login</title>
 </head>
 
 <body>
 	<style>
-	.myBtn{
-		font-size: 12px;
-		width: 80px;
-		border-radius:4px;
-		padding: 3px;
-		color: #007bff;
-		background-color: white;
-		border-color: #007bff;
-	}
+		.myBtn {
+			font-size: 12px;
+			width: 80px;
+			border-radius: 4px;
+			padding: 3px;
+			color: #007bff;
+			background-color: white;
+			border-color: #007bff;
+		}
 	</style>
 
 	<div class="container-fluid">
@@ -43,7 +44,7 @@
 			</div>
 		</div>
 		<div class="form-group col-sm-12 col-md-12 col-lg-12 text-center">
-			<form action="controller/C_cadastroVeiculo.php" method="POST">
+			<form action="controller/C_login.php" method="POST">
 				<div class="row d-flex justify-content-center mt-4">
 					<div class="col-12" style="text-align: center;margin-right:160px ">CNPJ</div>
 				</div>
@@ -62,13 +63,44 @@
 					</div>
 				</div>
 				<br />
-				<button type="button" onclick="location.href='view/gerenciarFrota.php';"class="myBtn mr-2" href="view/gerenciarFrota.php"> Login </button>
-				<button type="button" onclick="location.href='view/cadastrarCliente.php';"  class="myBtn">Cadastrar</button>
+				<button type="submit" class="myBtn mr-2"> Login </button>
+				<button type="button" onclick="location.href='view/cadastrarCliente.php';" class="myBtn">Cadastrar</button>
 
 			</form>
 		</div>
+
+		<?php if (isset($_GET['autenticado']) and $_GET['autenticado'] == "false") { ?>
+			<script>
+				Swal.fire({
+					type: 'error',
+					title: 'Senha Incorreta',
+				})
+			</script>
+		<?php } ?>
+
+		<?php if (isset($_GET['logout']) and $_GET['logout'] == "true") { ?>
+			<script>
+				Swal.fire({
+					type: 'success',
+					title: 'Logout'
+				})
+				
+			</script>
+		<?php } ?>
+
+		<?php if (isset($_GET['excluiu']) and $_GET['excluiu'] == "true") { ?>
+			<script>
+				Swal.fire({
+					type: 'success',
+					title: 'Conta Excluida'
+				})
+				
+			</script>
+		<?php } ?>
+
+
+
 	</div>
 </body>
 
 </html>
-
