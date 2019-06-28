@@ -21,6 +21,7 @@ $resultsdois = mysqli_query($conexao->getLink(), $querydois);
 	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="../node_modules/popper.js/dist/umd/popper.js"></script>
 	<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../node_modules/js/sweetalert.js"></script>
 		
 	<title>Atualizar</title>
 	<style>
